@@ -1,0 +1,83 @@
+$time: 330ms;
+
+$btns: (
+  alpha: (
+    gstart: #4c4f5a,
+    gend: #ff8a00,
+    tstart: #ff8a00,
+    tend: #da1b60
+  )
+);
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  position: relative;
+  font-size: 1rem;
+  border-radius: 3.5rem / 100%;
+  min-width: 15rem;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all $time;
+  
+  & + & {
+    margin-top: 1rem;
+  }
+  
+  span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  &:before {
+    content: "";
+    background-color: #21D4FD;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale(4) translateX(-100%);
+    transition: all $time * 1.5 ease-out;
+  }
+  
+  &:hover,
+  &:focus,
+  &:active {    
+    &:before {
+      transform: scale(4) translate(37%);
+    } 
+  }
+}
+
+
+@each $bname, $bcolors in $btns {
+  .btn--#{$bname} {
+    background-color: map-get($bcolors, gstart);
+    color: map-get($bcolors, tstart);
+  
+    &:before {
+      background-color: map-get($bcolors, gend);
+      background-image: linear-gradient(to right, map-get($bcolors, gend) 30%, map-get($bcolors, gstart) 100%);
+      position: absolute;
+    }
+    
+    &:hover,
+    &:focus,
+    &:active {    
+      color: map-get($bcolors, tend);
+    }
+  }
+}

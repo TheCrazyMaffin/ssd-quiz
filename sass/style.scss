@@ -1,0 +1,51 @@
+@import 'buttons';
+@import 'radio';
+@import 'background';
+
+body{
+    overflow: hidden;
+}
+
+.success-bg {
+    background: rgb(63,161,51);
+    background: linear-gradient(90deg, rgba(63,161,51,1) 0%, rgba(0,198,92,1) 34%, rgba(56,255,0,1) 100%);
+    color: black;
+}
+
+.fail-bg {
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(198,0,0,1) 58%, rgba(255,158,0,1) 100%);
+    color: black;
+}
+
+.center-me {
+    text-align: center;
+    align-content: center;
+  }
+
+.result {
+    margin: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 900;
+  padding: 1.25rem 2rem;
+  position: relative;
+  font-size: 1rem;
+  border-radius: 3.5rem / 100%;
+  min-width: 15rem;
+  max-width: 90vw;
+  overflow: hidden;
+  border: 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all $time;
+  
+  & + & {
+    margin-top: 1rem;
+  }
+  
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}

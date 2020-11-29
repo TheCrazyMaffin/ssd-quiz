@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erste Hilfe Quiz | SSD Ellentalgymnasien</title>
+
+    <link
+      href="/stylesheets/style.css"
+      media="screen, projection"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <canvas> </canvas>
+    <div class="center-me">
+      <img src="https://www.ellentalgymnasien.de/sites/default/files/logo_0.png" style="padding-bottom: 20%;">
+    </div>
+    <div class="container center-me" style="margin-left: 10%;margin-right: 10%;">
+      <span id="qEl">
+        <center style="padding: 0.5rem">
+          <h4 id="question">Frage wird geladen...</h4>
+        </center>
+        <input type="radio" name="field" id="answer1" /><label for="answer1"
+          ><svg class="check" viewbox="0 0 40 40">
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#ff8a00"></stop>
+                <stop offset="100%" stop-color="#da1b60"></stop>
+              </linearGradient>
+            </defs>
+            <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+            <circle id="dot" r="8px" cx="20px" cy="20px"></circle></svg
+          ><span id="answer1text">Antwort wird geladen...</span></label
+        >
+        <input type="radio" name="field" id="answer2" /><label for="answer2"
+          ><svg class="check" viewbox="0 0 40 40">
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#ff8a00"></stop>
+                <stop offset="100%" stop-color="#da1b60"></stop>
+              </linearGradient>
+            </defs>
+            <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+            <circle id="dot" r="8px" cx="20px" cy="20px"></circle></svg
+          ><span id="answer2text">Antwort wird geladen...</span></label
+        >
+        <input type="radio" name="field" id="answer3" /><label for="answer3"
+          ><svg class="check" viewbox="0 0 40 40">
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#ff8a00"></stop>
+                <stop offset="100%" stop-color="#da1b60"></stop>
+              </linearGradient>
+            </defs>
+            <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+            <circle id="dot" r="8px" cx="20px" cy="20px"></circle></svg
+          ><span id="answer3text">Antwort wird geladen...</span></label
+        >
+        <input type="radio" name="field" id="answer4" /><label for="answer4"
+          ><svg class="check" viewbox="0 0 40 40">
+            <defs>
+              <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="100%">
+                <stop offset="0%" stop-color="#ff8a00"></stop>
+                <stop offset="100%" stop-color="#da1b60"></stop>
+              </linearGradient>
+            </defs>
+            <circle id="border" r="18px" cx="20px" cy="20px"></circle>
+            <circle id="dot" r="8px" cx="20px" cy="20px"></circle></svg
+          ><span id="answer4text">Antwort wird geladen...</span></label
+        >
+        <div style="padding: 0.5rem">
+          <button id="submit" class="btn btn--alpha">
+            <span>Weiter</span>
+          </button>
+        </div>
+      </span>
+      <div id="resCont" style="padding: 0.5rem">
+        <div id="resAn" class="result success-bg"><span>Richtig!</span></div>
+        <div id="resultText">
+          Für den Disponent ist es am wichtigsten zu wissen wo etwas passiert
+          ist. etc etc
+        </div>
+        <div style="padding: 0.5rem" id="submitR">
+          <button onclick="loadRandomQuestion(); hideQuizElements(false);" class="btn btn--alpha">
+            <span>Weiter</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript/background.js"></script>
+    <script src="javascript/qna.js"></script>
+  </body>
+</html>
