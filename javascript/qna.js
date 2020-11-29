@@ -39,10 +39,10 @@ const questionsAndAnswers = [
         'c': 'Für den Disponent ist es am wichtigsten zu wissen <b>wo</b> etwas passiert ist.<br><b>Was</b> genau passiert ist und <b>wie</b> viele Verletzte es gibt kommt danach. Letztlich ist es ebenfalls wichtig zu wissen <b>welche</b> Verletzungen ein Patient hat. Am Ende des Gesprächs legt man nicht einfach auf sondern <b>wartet</b> auf Rückfragen. <br><br>Keine Angst wenn Du dir nicht alle "W"s merken kannst, der Disponent wird Dich danach fragen.'
     },
     {
-        'q': 'Unter welcher Nummer erreicht man den Rettungsdienst und die Feuerwehr?',
+        'q': 'Wie lautet die europäische Notrufnummer für den Rettungsdienst und die Feuerwehr?',
         'a': ['112', '110', '911', '19222'],
         't': '112',
-        'c': 'Die 112 ist die europaweit gültige Notrufnummer für Feuerwehr und Rettungsdienst.<br>Die 110 wird von der Polizei verwendet, die 911 ist die Amerikanische Notrufnummer und 19222 ist für <abbr title="Für Fahrten nach Hause/zum Arzt/u.ä. wenn man nicht in Not ist aber nicht selber fahren kann.">Krankentransporte</abbr>.'
+        'c': 'Die 112 ist die europaweit gültige Notrufnummer für Feuerwehr und Rettungsdienst.<br>Die 110 wird von der Polizei verwendet, die 911 ist die Amerikanische Notrufnummer und 19222 ist für <abbr title="Für Fahrten nach Hause/zum Arzt/u.ä. wenn man nicht in Not ist aber nicht selber fahren kann.">Krankentransporte</abbr>.<br>Solltest Du aber doch mal die falsche Nummer anrufen ist das nicht schlimm, die Disponenten werden Dich immer zur richtigen Nummer weiterleiten.'
     },
     {
         'q': 'Was ist zu beachten, wenn man mit dem Handy einen Notruf absetzt?',
