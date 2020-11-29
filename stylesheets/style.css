@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Karla|Space+Mono");
 /* line 13, ../sass/_buttons.scss */
 * {
   padding: 0;
@@ -64,7 +65,7 @@
   color: #da1b60;
 }
 
-/* line 10, ../sass/_radio.scss */
+/* line 13, ../sass/_radio.scss */
 body {
   margin: 0;
   display: flex;
@@ -76,14 +77,14 @@ body {
   color: #7a7a8c;
 }
 
-/* line 21, ../sass/_radio.scss */
+/* line 24, ../sass/_radio.scss */
 a {
   text-decoration: none;
   color: #7a7a8c;
   font-size: 0.675rem;
 }
 
-/* line 27, ../sass/_radio.scss */
+/* line 30, ../sass/_radio.scss */
 .container {
   position: relative;
   padding: 0.675rem;
@@ -96,13 +97,13 @@ a {
   background-color: #1d1e22;
   box-shadow: 0 5px 30px rgba(1, 1, 1, 0.3);
 }
-/* line 39, ../sass/_radio.scss */
+/* line 42, ../sass/_radio.scss */
 .container .name {
   margin-bottom: 0.675rem;
   display: flex;
   justify-content: flex-end;
 }
-/* line 44, ../sass/_radio.scss */
+/* line 47, ../sass/_radio.scss */
 .container .name h4 {
   margin: 0;
   text-transform: uppercase;
@@ -113,33 +114,33 @@ a {
   transform-origin: 100% 50%;
   transition: transform 500ms ease;
 }
-/* line 56, ../sass/_radio.scss */
+/* line 59, ../sass/_radio.scss */
 .container svg {
   width: 1.35rem;
   height: 1.35rem;
 }
-/* line 60, ../sass/_radio.scss */
+/* line 63, ../sass/_radio.scss */
 .container svg.gear {
   order: 1;
   margin-left: 1.35rem;
   cursor: help;
 }
-/* line 65, ../sass/_radio.scss */
+/* line 68, ../sass/_radio.scss */
 .container svg.gear:hover ~ h4 {
   transform: scale(1);
 }
 
-/* line 72, ../sass/_radio.scss */
+/* line 75, ../sass/_radio.scss */
 .btn {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 76, ../sass/_radio.scss */
+/* line 79, ../sass/_radio.scss */
 .btn a {
   margin: auto 1.35rem;
 }
 
-/* line 83, ../sass/_radio.scss */
+/* line 86, ../sass/_radio.scss */
 label {
   position: relative;
   margin: 0.675rem 1.35rem;
@@ -149,44 +150,44 @@ label {
   cursor: pointer;
 }
 
-/* line 92, ../sass/_radio.scss */
+/* line 95, ../sass/_radio.scss */
 .check {
   margin-right: 7px;
   width: 1.35rem;
   height: 1.35rem;
 }
-/* line 97, ../sass/_radio.scss */
+/* line 100, ../sass/_radio.scss */
 .check #border {
   fill: none;
   stroke: #7a7a8c;
   stroke-width: 3;
   stroke-linecap: round;
 }
-/* line 104, ../sass/_radio.scss */
+/* line 107, ../sass/_radio.scss */
 .check #dot {
   fill: url(#gradient);
   transform: scale(0);
   transform-origin: 50% 50%;
 }
 
-/* line 111, ../sass/_radio.scss */
+/* line 114, ../sass/_radio.scss */
 input {
   display: none;
 }
-/* line 114, ../sass/_radio.scss */
+/* line 117, ../sass/_radio.scss */
 input:checked + label {
   background: linear-gradient(180deg, #ff8a00, #da1b60);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 120, ../sass/_radio.scss */
+/* line 123, ../sass/_radio.scss */
 input:checked + label svg #border {
   stroke: url(#gradient);
   stroke-dasharray: 145;
   stroke-dashoffset: 145;
   animation: checked 500ms ease forwards;
 }
-/* line 127, ../sass/_radio.scss */
+/* line 130, ../sass/_radio.scss */
 input:checked + label svg #dot {
   transform: scale(1);
   transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
@@ -232,26 +233,34 @@ body {
 }
 
 /* line 9, ../sass/style.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15px;
+}
+
+/* line 16, ../sass/style.scss */
 .success-bg {
   background: #3fa133;
   background: linear-gradient(90deg, #3fa133 0%, #00c65c 34%, #38ff00 100%);
   color: black;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .fail-bg {
   background: red;
   background: linear-gradient(90deg, red 0%, #c60000 58%, #ff9e00 100%);
   color: black;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .center-me {
   text-align: center;
   align-content: center;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 .result {
   margin: 1rem;
   font-family: 'Source Sans Pro', sans-serif;
@@ -269,11 +278,11 @@ body {
   letter-spacing: 0.05em;
   transition: all 330ms;
 }
-/* line 43, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 .result + .result {
   margin-top: 1rem;
 }
-/* line 47, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .result span {
   position: relative;
   z-index: 1;
