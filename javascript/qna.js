@@ -94,9 +94,9 @@ const questionsAndAnswers = [
     },
     {
         'q': 'Welches Lied eignet sich nicht als Rhythmus für eine Herzdruckmassage?',
-        'a': ['TNT - ACDC', 'Highway to Hell - ACDC', 'Atemlos - Helene Fischer', 'Stayin\' Alive - Bee Gees'],
-        't': 'TNT - ACDC',
-        'c': 'Alle Lieder sind nicht nur thematisch passend sondern eignen sich auch optimal um die Herzdruckmassage im richtigen Tempo durchzuführen'
+        'a': ['Knockin\' On Heaven\'s Door - Guns n\' roses', 'Highway to Hell - ACDC', 'Atemlos - Helene Fischer', 'Stayin\' Alive - Bee Gees'],
+        't': 'Knockin\' On Heaven\'s Door - Guns n\' roses',
+        'c': 'Die Herzdruckmassge sollte ungefähr mit 120 Mal Drücken pro Minute durchgeführt werden. Dazu passt das Tempo von "Knockin\' On Heaven\'s Door" nicht.'
     },
     {
         'q': 'Wie bediene ich einen Defibrillator?',

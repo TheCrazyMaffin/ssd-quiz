@@ -12,7 +12,6 @@
   font-weight: 900;
   padding: 1.25rem 2rem;
   position: relative;
-  font-size: 1rem;
   border-radius: 3.5rem / 100%;
   min-width: 15rem;
   max-width: 90vw;
@@ -65,7 +64,7 @@
   color: #da1b60;
 }
 
-/* line 13, ../sass/_radio.scss */
+/* line 44, ../sass/_radio.scss */
 body {
   margin: 0;
   display: flex;
@@ -73,18 +72,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font: 400 1.35rem sans-serif;
   color: #7a7a8c;
+  font-family: sans-serif;
+}
+@media (min-width: 576px) {
+  /* line 44, ../sass/_radio.scss */
+  body {
+    font-size: 10px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 44, ../sass/_radio.scss */
+  body {
+    font-size: 15px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 44, ../sass/_radio.scss */
+  body {
+    font-size: 20px;
+  }
 }
 
-/* line 24, ../sass/_radio.scss */
+/* line 65, ../sass/_radio.scss */
 a {
   text-decoration: none;
   color: #7a7a8c;
-  font-size: 0.675rem;
 }
 
-/* line 30, ../sass/_radio.scss */
+/* line 71, ../sass/_radio.scss */
 .container {
   position: relative;
   padding: 0.675rem;
@@ -97,50 +113,49 @@ a {
   background-color: #1d1e22;
   box-shadow: 0 5px 30px rgba(1, 1, 1, 0.3);
 }
-/* line 42, ../sass/_radio.scss */
+/* line 83, ../sass/_radio.scss */
 .container .name {
   margin-bottom: 0.675rem;
   display: flex;
   justify-content: flex-end;
 }
-/* line 47, ../sass/_radio.scss */
+/* line 88, ../sass/_radio.scss */
 .container .name h4 {
   margin: 0;
   text-transform: uppercase;
-  font-size: 0.9rem;
   font-weight: normal;
   color: #dadadf;
   transform: scale(0);
   transform-origin: 100% 50%;
   transition: transform 500ms ease;
 }
-/* line 59, ../sass/_radio.scss */
+/* line 100, ../sass/_radio.scss */
 .container svg {
   width: 1.35rem;
   height: 1.35rem;
 }
-/* line 63, ../sass/_radio.scss */
+/* line 104, ../sass/_radio.scss */
 .container svg.gear {
   order: 1;
   margin-left: 1.35rem;
   cursor: help;
 }
-/* line 68, ../sass/_radio.scss */
+/* line 109, ../sass/_radio.scss */
 .container svg.gear:hover ~ h4 {
   transform: scale(1);
 }
 
-/* line 75, ../sass/_radio.scss */
+/* line 116, ../sass/_radio.scss */
 .btn {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 79, ../sass/_radio.scss */
+/* line 120, ../sass/_radio.scss */
 .btn a {
   margin: auto 1.35rem;
 }
 
-/* line 86, ../sass/_radio.scss */
+/* line 127, ../sass/_radio.scss */
 label {
   position: relative;
   margin: 0.675rem 1.35rem;
@@ -150,44 +165,44 @@ label {
   cursor: pointer;
 }
 
-/* line 95, ../sass/_radio.scss */
+/* line 136, ../sass/_radio.scss */
 .check {
   margin-right: 7px;
   width: 1.35rem;
   height: 1.35rem;
 }
-/* line 100, ../sass/_radio.scss */
+/* line 141, ../sass/_radio.scss */
 .check #border {
   fill: none;
   stroke: #7a7a8c;
   stroke-width: 3;
   stroke-linecap: round;
 }
-/* line 107, ../sass/_radio.scss */
+/* line 148, ../sass/_radio.scss */
 .check #dot {
   fill: url(#gradient);
   transform: scale(0);
   transform-origin: 50% 50%;
 }
 
-/* line 114, ../sass/_radio.scss */
+/* line 155, ../sass/_radio.scss */
 input {
   display: none;
 }
-/* line 117, ../sass/_radio.scss */
+/* line 158, ../sass/_radio.scss */
 input:checked + label {
   background: linear-gradient(180deg, #ff8a00, #da1b60);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-/* line 123, ../sass/_radio.scss */
+/* line 164, ../sass/_radio.scss */
 input:checked + label svg #border {
   stroke: url(#gradient);
   stroke-dasharray: 145;
   stroke-dashoffset: 145;
   animation: checked 500ms ease forwards;
 }
-/* line 130, ../sass/_radio.scss */
+/* line 171, ../sass/_radio.scss */
 input:checked + label svg #dot {
   transform: scale(1);
   transition: transform 500ms cubic-bezier(0.57, 0.21, 0.69, 3.25);
@@ -267,7 +282,6 @@ footer {
   font-weight: 900;
   padding: 1.25rem 2rem;
   position: relative;
-  font-size: 1rem;
   border-radius: 3.5rem / 100%;
   min-width: 15rem;
   max-width: 90vw;
